@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <ApplicationManifest>Lib\pages\AP_SigninPage.cs</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,8 +27,6 @@
   <ItemGroup>
     <Folder Include="BDD\AllSteps\" />
     <Folder Include="BDD\Features\" />
-    <Folder Include="Lib\driver_config\" />
-    <Folder Include="Lib\pages\" />
   </ItemGroup>
 
 </Project>
