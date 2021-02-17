@@ -35,7 +35,7 @@ namespace AutomationPracticeTestingProject.BDD
         public void WhenIEnterAnEmail()
         {
             AP_Website.AP_CreateAccountPage.CreateAndSubmitEmail($"testi{rand.Next()}@test.com");
-            Thread.Sleep(3000);
+            Thread.Sleep(5000);
         }
 
         [When(@"I click register")]

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading;
 
 namespace AutomationPracticeTestingProject
 {
@@ -43,6 +44,7 @@ namespace AutomationPracticeTestingProject
         public void CreateAndSubmitEmail(string email)
         {
             _emailCreate.SendKeys(email);
+            Thread.Sleep(3000);
             _createAccountBtn.Click();
         }
 
