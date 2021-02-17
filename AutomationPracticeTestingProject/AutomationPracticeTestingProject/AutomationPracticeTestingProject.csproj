@@ -10,15 +10,10 @@
 
   <ItemGroup>
     <Compile Remove="BDD\AllSteps\**" />
-    <Compile Remove="BDD\Features\**" />
     <EmbeddedResource Remove="BDD\AllSteps\**" />
-    <EmbeddedResource Remove="BDD\Features\**" />
     <None Remove="BDD\AllSteps\**" />
-    <None Remove="BDD\Features\**" />
     <SpecFlowFeatureFiles Remove="BDD\AllSteps\**" />
-    <SpecFlowFeatureFiles Remove="BDD\Features\**" />
     <SpecFlowObsoleteCodeBehindFiles Remove="BDD\AllSteps\**" />
-    <SpecFlowObsoleteCodeBehindFiles Remove="BDD\Features\**" />
   </ItemGroup>
 
   <ItemGroup>
