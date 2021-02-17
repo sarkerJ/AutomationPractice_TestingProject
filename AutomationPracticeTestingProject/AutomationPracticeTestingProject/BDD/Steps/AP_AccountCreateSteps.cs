@@ -64,6 +64,7 @@ namespace AutomationPracticeTestingProject.BDD
         [Then(@"I should see ""(.*)"" page")]
         public void ThenIShouldSeePage(string createAccount)
         {
+            Thread.Sleep(3000);
             Assert.That(AP_Website.AP_CreateAccountPage.HeaderText, Is.EqualTo(createAccount));
         }
 

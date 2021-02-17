@@ -44,7 +44,6 @@ namespace AutomationPracticeTestingProject
         public void CreateAndSubmitEmail(string email)
         {
             _emailCreate.SendKeys(email);
-            Thread.Sleep(3000);
             _createAccountBtn.Click();
         }
 
