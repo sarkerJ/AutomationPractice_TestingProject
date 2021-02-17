@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 namespace AutomationPracticeTestingProject.BDD
 {
     [Binding]
-    public class AccountCreateSteps
+    public class AP_AccountCreateSteps
     {
         public AP_Website<ChromeDriver> AP_Website;
         public Credentials credentials = new Credentials();

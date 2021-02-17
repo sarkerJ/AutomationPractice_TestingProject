@@ -1,5 +1,5 @@
-﻿Feature: AccountCreate
-	Simple calculator for adding two numbers
+﻿Feature: AP_AccountCreate
+	As a user I want to be able to create an account so that I can view my account information
 
 
 

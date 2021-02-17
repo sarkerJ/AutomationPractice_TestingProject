@@ -14,7 +14,6 @@ Scenario Outline: Continue shopping
 	When I add 1 product to cart
 	And I click continue shopping on the PopUp
 	Then I should see the dressespage with the title "Dresses - My Store"
-	#Then I should see a page with the title "Dresses - My Store"
 
 @Dresses
 Scenario Outline: Buy 1 products 
