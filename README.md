@@ -1,4 +1,11 @@
 # AutomationPractice Web Testing Project
+## Table of contents
+
+1. [Project Goal](#Project-Goal)
+2. [Framework](#Framework)
+3. [Class Diagram](#Class-Diagram)
+4. [Pickles](#Pickles)
+
 ## Project Goal
 
 The goal of this project was to create a testing framework to allow the use of automation testing for the **automationpractice.com** website. The framework used **Selenium**, **Specflow** and **Gherkin** language in order to create behaviour based tests. 
@@ -22,6 +29,8 @@ Each POM (page object model) class was injected with a **IWebDriver** interface,
 Once the scenarios were created, Specflow was used to generate the step classes and methods that mapped onto the different parts of those Scenario lines using the GIVEN, WHEN, THEN syntax. An example of this can be seen below
 
 ![stepclass](https://github.com/sarkerJ/AutomationPractice_TestingProject/blob/main/Images/stepclass.JPG)
+
+## Class Diagram
 
 The overall class diagram shown below can be used to get an overview of the entire framework of this solution
 
