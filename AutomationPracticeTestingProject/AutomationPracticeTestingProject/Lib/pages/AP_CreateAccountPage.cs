@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace AutomationPracticeTestingProject
 {
-    public class AP_CreateAccountPageTests
+    public class AP_CreateAccountPage
     {
         private IWebDriver _seleniumDriver;
         private string _signinPageUrl = AppConfigReader.SigninPageUrl;
@@ -34,7 +34,7 @@ namespace AutomationPracticeTestingProject
         private IWebElement _mobile => _seleniumDriver.FindElement(By.Id("phone_mobile"));
         private IWebElement _register => _seleniumDriver.FindElement(By.Id("submitAccount"));
 
-        public AP_CreateAccountPageTests(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
+        public AP_CreateAccountPage(IWebDriver seleniumDriver) => _seleniumDriver = seleniumDriver;
 
         public void VisitSigninPage()
         {

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutomationPracticeTestingProject.AP_Website&lt;T&gt;">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <AssociationLine Name="AP_CreateAccountPage" Type="AutomationPracticeTestingProject.AP_CreateAccountPage" FixedFromPoint="true">
+      <Path>
+        <Point X="6.25" Y="4.312" />
+        <Point X="8.25" Y="4.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SeleniumDriver" Type="OpenQA.Selenium.IWebDriver" FixedFromPoint="true">
+      <Path>
+        <Point X="5.625" Y="3.75" />
+        <Point X="5.625" Y="2.191" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.143" Y="0.214" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAQIAAAAgAAgAAAAAEAAAI=</HashCode>
+      <FileName>Lib\AP_Website.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AP_CreateAccountPage" />
+      <Property Name="AP_HomePage" />
+      <Property Name="AP_DressesPage" />
+      <Property Name="AP_SigninPage" />
+      <Property Name="SeleniumDriver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.AP_SigninPage" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAIAAAAAAAAACAAAAAIAAEAAAAAAIAAAAIAwA=</HashCode>
+      <FileName>Lib\pages\AP_SigninPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.AP_DressesPage" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAQAAAIQAAEAQAAAACAAEACAEEQBAAAAAAAAFAAAA=</HashCode>
+      <FileName>Lib\pages\AP_DressesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.AP_CreateAccountPage" Collapsed="true">
+    <Position X="8.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAQAIAAgAAAAEMIRCAAAAgAUAAAADACAgEAKARA=</HashCode>
+      <FileName>Lib\pages\AP_CreateAccountPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.AP_HomePage" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAQAAAAAAAAAAAAAAAEEAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Lib\pages\AP_HomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.SeleniumDriverConfig&lt;T&gt;">
+    <Position X="6.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\driver_config\SeleniumDriverConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.BDD.AP_AccountCreateSteps" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="2" />
+    <AssociationLine Name="AP_Website" Type="AutomationPracticeTestingProject.AP_Website&lt;T&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="2.75" Y="4.062" />
+        <Point X="4.75" Y="4.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAQIAAAAAAAAAAgAAgAAAAAAABAAAABAAgAAAAABA=</HashCode>
+      <FileName>BDD\Steps\AP_AccountCreateSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AP_Website" />
+      <Field Name="credentials" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.BDD.AP_DressesSteps" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAAAAAACAAAAAEAgAAAAAAAAQAEAAAAgEAAABAA=</HashCode>
+      <FileName>BDD\Steps\AP_DressesSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AP_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.BDD.AP_SigninSteps">
+    <Position X="1.25" Y="6.25" Width="3.5" />
+    <AssociationLine Name="AP_Website" Type="AutomationPracticeTestingProject.AP_Website&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.688" Y="6.25" />
+        <Point X="2.688" Y="5.613" />
+        <Point X="4.938" Y="5.613" />
+        <Point X="4.938" Y="5.238" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAQAAAAACAAAAAAAAgAAAQAAAAEAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BDD\Steps\AP_SigninSteps.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AP_Website" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestingProject.Credentials" Collapsed="true">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAIAAAACCKAAAAgAAAAAIAAEACAAAIBAAAIAg=</HashCode>
+      <FileName>Utils\Credentials.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OpenQA.Selenium.IWebDriver" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

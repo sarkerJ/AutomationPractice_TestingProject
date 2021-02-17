@@ -13,7 +13,7 @@ namespace AutomationPracticeTestingProject
         public AP_HomePage AP_HomePage { get; internal set; }
         public AP_SigninPage AP_SigninPage { get; internal set; }
         public AP_DressesPage AP_DressesPage { get; internal set; }
-        public AP_CreateAccountPageTests AP_CreateAccountPage { get; internal set; }
+        public AP_CreateAccountPage AP_CreateAccountPage { get; internal set; }
 
         //Constructor for driver and condig for the service
         public AP_Website(int pageLoadInSecs = 10, int implicitWaitInSecs = 10)
@@ -25,7 +25,7 @@ namespace AutomationPracticeTestingProject
             AP_HomePage = new AP_HomePage(SeleniumDriver);
             AP_SigninPage = new AP_SigninPage(SeleniumDriver);
             AP_DressesPage = new AP_DressesPage(SeleniumDriver);
-            AP_CreateAccountPage = new AP_CreateAccountPageTests(SeleniumDriver);
+            AP_CreateAccountPage = new AP_CreateAccountPage(SeleniumDriver);
         }
 
         //delete cookies (optional)
